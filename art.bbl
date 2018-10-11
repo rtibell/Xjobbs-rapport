@@ -1,0 +1,88 @@
+\begin{thebibliography}{10}
+
+\bibitem{CeccWilh:11}
+V{\^a}nia. Ceccato and Mats Wilhelmsson.
+\newblock The impact of crime on apartment prices: Evidence from stockholm,
+  sweden.
+\newblock {\em Geografiska Annaler: Series B, Human Geography}, 93(1):81--103,
+  March 2011.
+
+\bibitem{Kumm:13}
+Max Kummerow.
+\newblock Theory for real estate valuation: An alternative way to teach real
+  estate price estimation methods.
+
+\bibitem{MahaBakeNorw:99}
+Ku. Ruhana.~Ku. Mahamud, Azuraliza.~Abu. Baker, and Norita.~Md. Norwawi.
+\newblock Multi layer perceptron modelling in the housing market.
+\newblock {\em Malaysian Management Journal}, 3(1):61--69, 1999.
+
+\bibitem{WilsJoneJenkWare:04}
+I.~D. Wilson, Antonia.~J. Jones, D.~H. Jenkins, and J.~A. Ware.
+\newblock Predicting housing value: Attribute selection and dependence
+  modelling utilising the gamma test.
+\newblock In {\em Advances in Econometrics}, pages 243--275, 2004.
+
+\bibitem{ArulMora:13}
+Hari. Arul and Andres. Morales.
+\newblock Nyc condo price estimation using nyc open data.
+
+\bibitem{GlorBeng:10}
+X.~Glorot and Y.~Bengio.
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock {\em Journal of Machine Learning Research}, Proceedings Track
+  01:249--256, 2010.
+
+\bibitem{HintSrivKrizSutsSala:12}
+Geoffrey~E. Hinton, Nitish Srivastava, Alex Krizhevsky, Ilya Sutskever, and
+  Ruslan Salakhutdinov.
+\newblock Improving neural networks by preventing co-adaptation of feature
+  detectors.
+\newblock {\em CoRR}, abs/1207.0580, 2012.
+
+\bibitem{Papa:08}
+Harris. Papadopoulos.
+\newblock {\em Inductive Conformal Prediction: Theory and Application to Neural
+  Networks}.
+\newblock Intech, ISBN: 978-953-7619-03-9, 2008.
+
+\bibitem{PapaHara:10}
+Harris Papadopoulos and Haris Haralambous.
+\newblock {\em Neural Networks Regression Inductive Conformal Predictior and
+  Its Application to Total Electron Content Prediction}, volume 6352 of {\em
+  Lecture Notes in Computer Science}.
+\newblock Springer-Verlag Berlin, Heidelberg, Sep 2010.
+
+\bibitem{PapaVovkGamm:07}
+Harris. Papadopoulos, Volodya. Vovk, and Alex. Gammerman.
+\newblock Conformal prediction with neural networks.
+\newblock {\em 19th IEEE International Conference on Tools with Artificial
+  Intelligence}, 2:388--395, Oct 2007.
+
+\bibitem{PapaVovkGamm:11}
+Harris. Papadopoulos, Vladimir. Vovk, and Alex. Gammerman.
+\newblock Regression conformal prediction with nearest neighbours.
+\newblock {\em Journal of Artificial Intelligence Research}, 40:815--840, April
+  2011.
+
+\bibitem{ShafVovk:08}
+Glenn. Shafer and Vladimir. Vovk.
+\newblock A tutorial on conformal prediction.
+\newblock {\em Journal of Machine Learning Research}, 9:371--421, March 2008.
+
+\bibitem{CaplChopLeahLecuTham:08}
+Andrew Caplin, Sumit Chopra, John Leahy, Yann Lecun, and Trivikrmaman Thampy.
+\newblock Machine learning and the spatial structure of house prices and
+  housing returns.
+\newblock 2008.
+
+\bibitem{ChopThamLeahCaplLeCu:07}
+Sumit. Chopra., Trivikraman. Thampy., John. Leahy., Andrew. Caplin., and Yann.
+  LeCun.
+\newblock Discovering the hidden structure of house prices with a
+  non-parametric latent manifold model.
+\newblock {\em Proceedings of the 13th ACM SIGKDD International Conference on
+  Knowledge Discovery and Data Mining}, 01/2007, August 2007.
+
+\end{thebibliography}

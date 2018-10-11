@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: art.aux
+The style file: unsrt.bst
+Database file #1: MasterThesisPappers.bib
+Warning--entry type for "ArulMora:13" isn't style-file defined
+--line 61 of file MasterThesisPappers.bib
+Warning--entry type for "Kumm:13" isn't style-file defined
+--line 74 of file MasterThesisPappers.bib
+Warning--can't use both author and editor fields in Papa:08
+Warning--can't use both author and editor fields in PapaHara:10
+Warning--can't use both volume and number fields in PapaHara:10
+Warning--empty journal in CaplChopLeahLecuTham:08
+You've used 14 entries,
+            1791 wiz_defined-function locations,
+            541 strings with 6372 characters,
+and the built_in function-call counts, 2938 in all, are:
+= -- 235
+> -- 146
+< -- 2
++ -- 54
+- -- 40
+* -- 202
+:= -- 476
+add.period$ -- 40
+call.type$ -- 14
+change.case$ -- 12
+chr.to.int$ -- 0
+cite$ -- 18
+duplicate$ -- 130
+empty$ -- 293
+format.name$ -- 40
+if$ -- 654
+int.to.chr$ -- 0
+int.to.str$ -- 14
+missing$ -- 14
+newline$ -- 71
+num.names$ -- 14
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 67
+stack$ -- 0
+substring$ -- 145
+swap$ -- 28
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 22
+width$ -- 16
+write$ -- 146
+(There were 6 warnings)

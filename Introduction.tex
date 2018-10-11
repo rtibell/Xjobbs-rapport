@@ -1,0 +1,51 @@
+
+The research around neural networks in general and multilayer perceptrons in special has lead to many novel ideas that increases the quality of the predictions and reduced the running time of the alghoritm. That in combination with the gained knowledge in using multilayer perceptrons has opens new fields for there use. The question at hand is if a multilayer perceptron can predict the final selling price of a apartment in a co-operative housing societies sold in Stockholm city with reasonable accuracy. And can it outperform a more commonly used machine learning system like the support vector regression (SVR).
+   
+
+\subsection{Background}
+The predicting power of the machine learning system has steadily increase over the years mainly due to intensive research that has refined and improved the underlying algorithms. The same development holds for the Multilayer Perceptrons but the path to the current abilities and performance has had it's ups and downs. In the early 1960's the perceptrons became popular and the expectations were high but 1969 Minsk and Papert analysed there limitations which dampened the enthusiasm. Adding hidden layers (multilayer) doesn't help to break theses limitations as long as they are linear. The power comes from the combination of multiple layers of hidden units using non-linear activation functions. One major restriction is that the perceptron learning algorithm is ill suited for neural networks with multiple layers of non-linear units. The solution came with the back-propagation algorithm that generalizes well with multilayer perceptrons with linear and non-linear units. Tough it is a bit misleading that they still are called multilayer perceptrons despite the fact that the perceptron algorithm is seldom used these days.
+\\
+Predicting the price of a house or a apartment is a classic and commonly used example within the machine learning community. This in combination with being a resident in Stockholm where as in many capital cities the state of the apartment market is on everyone lips. Even as a resident it is often hard to understand which factors are affecting the prices of apartments. The notion is that it probably is more complex to analyse the market of apartments in Stockholm then determine the housing price in other parts of Sweden. The idea was born to try to predict the prices of apartments for sale and to find some of the major factors affecting the final price. All data used in the project stems from public available sources, so called ``Open Data'' sources. This hopefully makes it easy for those who wants to lock into this machine learning example domain and experiment and draw there own conclusions from this work.
+\\
+There is a belief amongst some of the experts that the price for which the apartments are sold doesn't reflect the true value of the object. Prices has been constantly rising since the mid nineties and the proportion of the salary spent on living has increased for the habitants in the Stockholm area. The driving forces behind this is increasing GDP, low production of new apartments, the constant influx of people to Stockholm and a low rate of interest for apartment loans. All these factors together makes the market of apartment quite complicated and increases the complexity of predicting a accurate prices.
+
+
+\subsubsection{Problem description}
+This paper explores the feasibility of creating a machine learning model that can predict the price of a apartment sold in central Stockholm with a fare precision and based on a neural network of type Multilayer Perceptron with a hand full of contemporary techniques applied. The Multilayer Perceptron will henceforth often be shortened to MLP.
+\\
+\texttt{ToDo: Add more descriptive text...} 
+\\
+
+\subsubsection{Traditional pricing model} \label{sss:hedonic}
+One of the most wide spread models used to analyse property values are the hedonic price model which often are used by condominium brokers, banks and lending institutions. This model is based on the assumption that apartments are not homogeneous but differs in there attributes and that this is reflected in the selling price where the buyer implicitly pays for these favourable attributes. The hedonic price equation can be written as:
+\begin{equation} \label{eq:hedonic_pe_base} 
+y_{i} = \beta_{j} X_{j,i}  + \epsilon_{i}
+\end{equation}
+
+In the above equation (\ref{eq:hedonic_pe_base}) $y_{i}$ is the $i$-th observed sales price where $i \in 1 \ldots N$, N is the number of sales. The implicit prices of the attributes mentioned above is found in $\beta$ where $j \in 1 \ldots F$, $X$ is the sales data and F is the number of attributes. Errors are capture by $\epsilon$ the error term. Attributes often encapsulates the characteristics of the apartment, location and features of the neighbourhood.  
+\\
+\texttt{ToDo: describe PCA process and results from Pearssons} 
+\\
+
+
+\subsubsection{Objective}
+As mentioned before the goal as to find a machine learning model that can predict the selling price of an apartment situated in the centre of Stockholm. This has to be done with a good quality to be meaningful for the end user. This kind of model can be use by apartment agencies to predict the future selling price or by financial institutions (loan givers) to find out the value of the pledge. To construct the model a neural network of the type multilayer perceptron is used in combination with some novel techniques to increase the precision of the predictions. Below is a list of the techniques use:
+\begin{itemize}
+\item Gradient descent
+\item MiniBatch
+\item Early stopping
+\item Adjustable learning rate and momentum
+\item Random initialization of weights
+\item Conformal Prediction
+\end{itemize}
+The performance of the produced model is compared with support vector regression (SVR) to verify that the multilayer perceptron can outperforms a regular SVR. 
+\\
+\texttt{ToDo: develop a MP-model} \\
+\texttt{ToDo: describe selected parameters} \\
+
+\subsubsection{Restrictions}
+This paper will not describe the whole process of how to construct a full fledged application. Nor will it result in any deployable software solution.Though all the code snippets that are developed during this research will be made available as Open Source at github.com.
+\\
+\texttt{ToDo: Check that all restrictions is accounted for}\\
+
+

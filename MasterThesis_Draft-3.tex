@@ -1,0 +1,140 @@
+% Master's Thesis
+% by Rasmus Tibell
+
+%\documentclass[a4paper]{article}
+%\documentclass[draft]{article}
+\documentclass[a4paper,11pt]{kth-mag}
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[latin1]{inputenc}
+\usepackage[swedish,english]{babel}
+\usepackage{nada-ex}
+
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{multibbl}
+\usepackage{float}
+%\usepackage[titletoc]{appendix}
+%\usepackage[table]{xcolor}
+\usepackage{booktabs,caption,fixltx2e}
+\usepackage[flushleft]{threeparttable}
+\usepackage{wrapfig}
+\usepackage{xspace}
+% \usepackage[pdftex]{graphicx}
+
+
+\title{Master's Project in Computer Science}
+%\subtitle{Duis autem vel eum iruire dolor in hendrerit in}
+
+\author{Rasmus Tibell}
+\date{November 2014}
+\blurb{Master's Thesis at NADA\\Supervisor: Tjoho\\Examiner: Tjohej}
+\trita{TRITA xxx yyyy-nn}
+
+
+\restylefloat{table}
+
+\begin{document}
+
+%===============
+%= hypenations =
+%===============
+\hyphenation{social-demokratiska arbetare-parti}
+\hyphenation{multi-layer persep-trons tourna-ment cross-over con-formal pre-diction gene-rations popu-lation}
+
+\newbibliography{art}
+\bibliographystyle{art}{unsrt} 
+
+\newbibliography{dat}
+\bibliographystyle{dat}{unsrt} 
+
+\newbibliography{rdr}
+\bibliographystyle{rdr}{alpha} 
+
+%\maketitle
+\frontmatter
+\maketitle
+\input{kth-abs}
+\clearpage
+\selectlanguage{swedish}
+\begin{abstract}
+  Denna fil ger ett avhandlingsskelett.
+  Mer information om \LaTeX-mallen finns i
+  dokumentationen till paketet.
+\end{abstract}
+\selectlanguage{english}
+\clearpage
+\tableofcontents
+\mainmatter
+
+%prekth%\pagebreak
+%prekth%\tableofcontents
+
+
+\pagebreak
+\section{Introduction}
+\input{Introduction.tex}
+
+
+\pagebreak
+\section{Literature Review} \label{ss:literature_review}
+\input{LiteratureReview.tex}
+
+
+\pagebreak
+\section{Method}
+\input{Method.tex}
+
+
+\pagebreak
+\section{The mathematics of Backpropagation}
+\input{X-jobbs_math.tex}
+
+
+\section{Experiments and Results} \label{ss:results}
+\input{ExperimentsResults.tex}
+ 
+
+
+\section{Conclusion}
+\input{Conclusion.tex}
+
+
+
+\section{Discussion}
+\input{Discussion.tex}
+
+
+%--------------------
+%--- General ToDo ---
+%--------------------
+\section{General ToDo}
+\texttt{ToDo: Check if tempus is concistent} \\
+\texttt{ToDo: Check spelling} \\
+\texttt{ToDo: Check references} \\
+\texttt{ToDo: Check Bibliografy} \\
+
+
+
+\pagebreak
+\section{Bibliography}
+\bibliography{art}{MasterThesisPappers}{References to articles} 
+
+\bibliography{dat}{MasterThesisDataSrc}{Data sources} 
+
+\bibliography{rdr}{MasterThesisReading}{Recomended reading} 
+
+\pagebreak
+\begin{appendices}
+
+\section{Features} \label{sss:appendix_a}
+\input{FeatureTable.tex}
+
+\end{appendices}
+
+
+\end{document}
+

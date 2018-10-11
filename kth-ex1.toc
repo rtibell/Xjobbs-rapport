@@ -1,0 +1,26 @@
+\changetocdepth {2}
+\select@language {english}
+\select@language {swedish}
+\select@language {english}
+\contentsline {chapter}{Contents}{v}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}
+\contentsline {part}{\partnumberline {I}Important Results}{3}
+\contentsline {chapter}{\chapternumberline {2}First One}{5}
+\contentsline {section}{\numberline {2.1}Preliminaries}{5}
+\contentsline {subsection}{\numberline {2.1.1}Remarks}{5}
+\contentsline {subsection}{\numberline {2.1.2}Definitions}{6}
+\contentsline {section}{\numberline {2.2}The Main Theorem}{6}
+\contentsline {subsection}{\numberline {2.2.1}Problem Statement}{7}
+\contentsline {subsection}{\numberline {2.2.2}The Proof}{7}
+\contentsline {chapter}{\chapternumberline {3}Second One}{9}
+\contentsline {section}{\numberline {3.1}Preliminaries}{9}
+\contentsline {subsection}{\numberline {3.1.1}Remarks}{10}
+\contentsline {subsection}{\numberline {3.1.2}Definitions}{10}
+\contentsline {section}{\numberline {3.2}The Main Theorem}{10}
+\contentsline {subsection}{\numberline {3.2.1}Problem Statement}{11}
+\contentsline {subsection}{\numberline {3.2.2}The Proof}{11}
+\contentsline {part}{\partnumberline {II}Less Important Results}{13}
+\contentsline {chapter}{\chapternumberline {4}Last One}{15}
+\contentsline {section}{\numberline {4.1}Definitions}{15}
+\contentsline {section}{\numberline {4.2}The Main Theorem}{16}
+\contentsline {subsection}{\numberline {4.2.1}The Proof}{16}

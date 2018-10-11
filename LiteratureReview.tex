@@ -1,0 +1,131 @@
+The literature review is divided into two parts, since the nature of the reviewed papers naturally falls into two categories; research in the apartment and housing market domain and theory and techniques applicable to machine learning. 
+\\
+In the first part of this chapter studies regarding pricing structure and factors affecting the final pricing are reviewed. This part of the review is structured on a per article basis, the main reason for selecting this strategy is the diversity of the perspectives in the reviewed papers. The goal is to identify the main factors affecting the pricing of apartments and explore the relevant knowledge in the field accumulated in previous research. 
+\\
+The second part considers articles discussing novel techniques to improve predictions and performance of neural networks, common practices used when evaluating models and recommendations concerning tuning and parameter adjustments. For these topics the reviews are performed on a per subject basis and each subject is covered in a separate section.
+\\
+
+\subsection{Review of literature covering apartment and housing markets} 
+All papers reviewed in this section share the common opinion that real estate assets and apartments are heterogeneous to there nature. The price may be affected by hundreds of factors and that many different outcomes are possible due to buyers preferences, available information and circumstances of sale. This gives rise to the fact that the price of a property in a given point in time can be modelled as a random variable and a random error. 
+\\
+\texttt{ToDo: Add text discussing conclusions regarding the market} 
+
+%=====
+%= A prominent role in society 
+%=====
+\subsubsection{A prominent role in society}
+As predictive models used to estimate values of apartments and real estates get more exact they are more likely to play a more prominent role in society and politics. In the article \cite{art}{WilsJoneJenkWare:04} the authors argues for the importance of a firm pricing model. The situation on the Swedish market has many similarities with the UK market discussed in the paper. Residential properties are mortgaged in about sixty-file percent in the UK market. Lenders use the current market price as the key metric for determining the lending ceiling which fuels the risk of overheating the market. This can inflict socio-economic damages and big losses for credit institutions. These problems have been observed in vulnerable countries in Europe.
+A metric with a more sustainable value could reduce the risk of over heating and would be preferable. For this scenario to be plausible the predictive models has to be refined and give a prudent price estimate of the property. 
+
+
+
+%=====
+%= Crimes impact on apartment prices
+%=====
+\subsubsection{Crimes impact on apartment prices}
+In the study of crimes impact on apartment prices in Stockholm \cite{art}{CeccWilh:11}, Caccato and Wilhelmsson concludes from there findings that the apartment price is expected to fall by 0.04 per cent for each per cent in increased crime rate. The decrees in prices rises to 0.21 per cent for each per cent increase in crime rate if only residential burglary is considered. Although the effect is not homogeneous over space, apartment prices are often affected to a lower degree in the central part of Stockholm compared to the outskirts. Taking this knowledge into concern in combination with the fact that this report is targeted against apartment in the central part of the city instigated the decision to exclude crime rate and resembling data from this work. Although several feature related approaches referred to by Caccato and Wilhelmsson are used in the model or has inspired feature selection in our work.  
+\\
+This study is based on 9,622 sale transactions of condominiums in Stockholm during 2008, data was supplied by M{\"a}klarstatistik AB. To enrich the dataset with supplementary features cross-sectional data from the Stockholm Police, Stockholm Statistics and the municipal of Stockholm was merged together with the sales transactions. The information was then used to form features like proximity to water, underground stations, crimes per 10.000 citizens and other characteristics of the neighbourhood. Geographical data was used to divide the region into four quadrants with the central business district (CBD) as a centre point, the distance between the given apartment and the centre point is also used as an feature. Due to the fact that effects of crime can spill-over to neighbouring areas Caccato and Wilhelmsson has incorporated so called lagged variables, these are weighted averages of values for neighbouring locations. This type of feature is not used in this paper, this follows from the fact that no crime statistics are use. Table \ref{tab:feature_list_CeccWilh_11} contains a condensed list of the attributes used.
+\\
+\begin{table}[H]
+%\centering
+\begin{tabular}{ | l || l | } 
+\hline 
+\multicolumn{2}{|c|}{Feature group} \\
+\hline
+\hline
+Transaction price & Living area \\
+Number of rooms & Monthly fee \\
+Age of building (\#6) & Newly built \\
+Elevator in house & Balcony belonging to apartment \\
+Apartment at top floor & Apartment at first floor \\
+\hline
+Distance to CBD & North-east quadrant \\
+North-west quadrant & South-west quadrant \\
+\hline
+Distance to water (\#3) & Distance to underground station (\#3) \\
+Distance to highway (\#3) & Distance to main street (\#3) \\
+\hline
+Crime rate & Rate of robbery \\
+Vandalism & Outdoor violence \\
+Residential burglary & Shoplifting \\
+Drug related crime & Theft \\
+Theft of cars & Theft from cars \\
+Assaults & \\
+\hline
+\end{tabular}
+\caption{List of features used by Caccato and Wilhelmsson}
+\label{tab:feature_list_CeccWilh_11}
+\end{table}
+
+
+%=====
+%= Traditional real estate valuation
+%=====   
+\subsubsection{Traditional real estate valuation} \label{sss:traditional_valuation}
+The real estate market and there valuation methods are described in the article \cite{art}{Kumm:13} by Max Kummerow at Curtin University. In this paper he elucidates the theory behind the methods used by the real estate market in USA. Valuation methods can be divided into two main categories: objective and subjective where the objective method stems from the rational paradigms of science in contrast to the subjective method that can be viewed as more of a ``art''. The fundamental properties of the objective method is that conclusions are based on evidence that when viewed by others the same result should be derived. Often the property price is perceived as a random variable this induce the notion that there are no ``true value'' of the properties price, rather there are multiple prices that are possible with varying probability.   
+\\
+The heterogeneity in the market gives rise to models based on price differences. These models uses selected sets of previous sales with similar characteristics, those that affects the price are identified and there value is estimated in order to calculate the price implication. This model is based on the notion that for complex product the customer pays for the utility and the price paid is the sum of the utility of the characteristics. Two types of errors arises in this model: random variation in sales price and estimation errors for the value implication, the total error is the sum of the two. Let $\sigma$ be the standard deviation of the price distribution and n the sample size of sales. Then the standard deviation of the mean is $\frac{\sigma}{\sqrt{n}}$ and decrees as the sample size increases. Due to the heterogeneity of the properties the variance $\sigma^{2}$ increases when the sample size increases. This leads to a error trade-off when increasing the sample size the variance $\sigma^{2}$ of the sample increases while the mean of the sampling distribution decreases.
+\\
+One commonly used model is the hedonic price model described in chapter \ref{sss:hedonic}, hedonic stems from Greek and means pleasure. The equation is written as: $y_{i} = \beta_{j} X_{j,i}  + \epsilon_{i}$ where 
+$y_{i}$ is the i'th observed sales price $i \in 1 \ldots N$, N is the number of sales, $\beta$ is the implicit prices, $X$ contains the sales information, F is the number of attributes and $j \in 1 \ldots F$. Errors are capture by $\epsilon$ the error term. The fundamental principle in the hedonic price model is that buyer acquires a bundle of characteristics for whom she is willing to pay a certain amount for each of the them.
+\\
+In the article \cite{art}{Kumm:13} by Kummerow he refers to economic theory that states that the long running cost relates to the value and that the supply will be adjusted until price and cost is at equilibrium. Though the adjustment is protracted due to the time required for exploration and construction of housing which causes the market to seldom be at equilibrium hence the cost does not equal price for a lengthy period of time. The driving factor of the short term price is the supply and demand and the actual sales transaction is a necessity to disclose the price and cost relationship.  
+
+
+%=====
+%= Real estate valuation using neural networks
+%=====
+\subsubsection{Real estate valuation using neural networks} \label{sss:using_ann}
+Artificial Neural Networks (ANN) are well suited to construct models used to predict real estate values. The networks ability to catch non-linear behaviours is on of its aptitudes to predict prices of apartments and houses. Many factors affecting the hosing market like inflation, social concerns and interest rates are non-linear. Another beneficial feature of the neural networks are there ability to cope with noisy data sets. In a study \cite{art}{MahaBakeNorw:99} performed on the Malaysian hosing market based on data from a time period of tree years (1994-1996) in total 300 sales (15\% used for validation and 5\% for testing), a MLP was used to predict the prices of terrace houses using nine features (sample year, land area, type of house, ownership type, build area, age of house, distance from city, environment and building quality). The network was configured with nine input nodes corresponding to the input features, a hidden layer comprising of 3 to 7 nodes and a single predicting output node. Using this method a root mean square error of 0,061717 was obtained for a MLP with five hidden units and a linear activation function. Both the hyperbolic tangent function and the sigmoid function produced results with higher error rate. The results obtained in the study indicates that the MLP is well suited for the task of predicting house prices and that it can outperform a multiple regression based algorithm.     
+\\
+\texttt{ToDo: More stuff from article about GA and Gamma Test ...}
+\\
+A more elaborate approach is discussed in the paper \cite{art}{WilsJoneJenkWare:04} where a Gamma Test (GT) is used to drive a Genetic Algorithm (GA) in the process of selecting useful features from a data set. This data was then used to train a ANN on the root mean squared error produced by the GT. Without any prior knowledge of the system the Gamma Test is able to estimate the noise level in the data, a quality measure that indicates whether a smooth model exists or not.This approach has the advantage of being able to handle dataset with large numbers of useful input but with high levels of noise or sparse data. Finding a good combination of features is a optimization problem and here a Genetic Algorithm is used to search for the optimal feature set. To find the optimum the GA uses a population of individuals who each has there own genome describing there characteristics. A objective function is used to estimate the individuals quality whit respect to the problem at hand. The algorithm evolves as the generations progresses. For every generation the population is adjusted where lower ranking individuals are excluded and new crated by a mating process where genome parts are exchanged (crossover)between spouses and with a small probability a mutation is performed. To be able to mate the individual has to succeed in a tournament. Here the genome is a boolean mask indicating whether the column of the data should be in the feature set or not. The objective function is quite complex in this paper but in essence it calculates the Gamme statistics for the genome, hence the included columns in combination with weighted measures of: the amount of noise, complexity of underlying relationships between output and input date and finally the complexity of the ANN layout.   
+
+%=====
+%= Condominium price estimation using open data
+%=====
+\subsubsection{Condominium price estimation using open data} \label{sss:using_open_data}
+Price estimation using support vector regression (SVR) and Open Data from the New York condominium market is explored by \cite{art}{ArulMora:13} Arul and Morales in there paper. Initial they use a 10 dimensional data set with features related to the price containing 4950 data points from 2011 and 2012. There principal components analyse yielded 7 features that could account for 98,3\% of the data, high ranking features were: building classification, construction year, gross income and expense per square foot. The SVR based model based on the 10 open data features predicted prices with an average error of 38,2\%, further 36,11\% of the predictions where within 15\% of the actual price. In order to improve the predictions GPS based location data was included in to the data set as a distance to a origin point. This in combination with a feature selection gave a average error of 21,8\% where 49,1\% of the predictions fell into the 15\% range of the actual price. In the conclusion, it is suggested to include features regarding: crime data, school district data and socio-economic data.    
+
+%===================
+%===================
+%=== Review of literature in the field perceptrons and machine learning
+%===================
+%===================
+\subsection{Review of literature in the field perceptrons and machine learning}
+
+
+%=====
+%= Difficulties training neural networks
+%=====
+\subsubsection{Difficulties training neural networks} \label{sss:glorot_and_bengio}
+One of the pit falls when training Neural Networks is to select a good regime for weight and bias initialization in combination with activation function. These issues are covered by X. Glorot and Y. Bengio in there paper \cite{art}{GlorBeng:10} where they study the effect of random initialization of weights and how the effects the gradient descent algorithm. The Sigmoid activation function has a non-zero mean and this is known to cause singular values in the Hessian matrix. They further discovered that the last hidden layer rapidly obtain there saturation value of 0 and that this situation can last very long. This makes the Sigmoid activation function less suitable for MLP:s and especially used in combination with the traditional initialization schema described by equation \ref{eq:weight_init_regular} in chapter \ref{sss:weight_bias_initialization}. The recommendation is to use the hyperbolic tangent or softsign activation function in combination with the so called normalized initialization, see equation \ref{eq:weight_init_normalized} in chapter \ref{sss:weight_bias_initialization}. Effects of changing the schema for weight initialization are explored in chapter \ref{sss:boosting_mlp_weight_init}. Further Glorot and Bengio concludes that the normalized initialization is well suited for the hyperbolic tangent activation function.    
+
+
+%=====
+%= Using dropout on hidden nodes
+%=====
+\subsubsection{Using dropout on hidden nodes} \label{sss:using_dropout}
+In the paper \cite{art}{HintSrivKrizSutsSala:12} Improving neural networks by preventing co-adaptation of feature detectors G. Hinton et al. describes the regime of using ``dropout'' to avoid ``overfitting''. This is achieved by randomly omitting 50\% of the training data on the hidden nodes for each training case. When the model is used to predict e.g. verification or test data the outgoing weights has to be compensated by dividing them by 2, this because when predicting all the nodes are on unlike in the training phase. Additional improvement can be obtained by randomly dropping out 20\% of the inputs.  
+This regime can also be viewed as a method of averaging different models. Significant improvement is shown for this method on e.g. the MNIST data set. 
+
+
+%=====
+%= Inductive Conformal Prediction
+%=====
+\subsubsection{Inductive Conformal Prediction} \label{sss:ref_conformal_prediction}
+\cite{art}{Papa:08}
+\cite{art}{PapaHara:10}
+\cite{art}{PapaVovkGamm:07}
+\cite{art}{PapaVovkGamm:11}
+\cite{art}{ShafVovk:08}
+\texttt{ToDo: More stuff...}
+
+
+\texttt{References ToDo}
+\cite{art}{CaplChopLeahLecuTham:08}
+\cite{art}{ChopThamLeahCaplLeCu:07}
+
+

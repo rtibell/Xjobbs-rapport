@@ -1,0 +1,71 @@
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {subsection}{\numberline {1.1}Background}{4}
+\contentsline {subsubsection}{\numberline {1.1.1}Problem description}{5}
+\contentsline {subsubsection}{\numberline {1.1.2}Traditional pricing model}{5}
+\contentsline {subsubsection}{\numberline {1.1.3}Objective}{5}
+\contentsline {subsubsection}{\numberline {1.1.4}Restrictions}{6}
+\contentsline {section}{\numberline {2}Literature Review}{7}
+\contentsline {subsection}{\numberline {2.1}Review of literature covering apartment and housing markets}{7}
+\contentsline {subsubsection}{\numberline {2.1.1}Crimes impact on apartment prices}{7}
+\contentsline {subsubsection}{\numberline {2.1.2}Traditional real estate valuation}{8}
+\contentsline {subsubsection}{\numberline {2.1.3}Real estate valuation using neural networks}{9}
+\contentsline {subsubsection}{\numberline {2.1.4}Condominium price estimation using open data}{10}
+\contentsline {subsection}{\numberline {2.2}Review of literature in the field perceptrons and machine learning}{10}
+\contentsline {subsubsection}{\numberline {2.2.1}Difficulties training neural networks}{10}
+\contentsline {subsubsection}{\numberline {2.2.2}Using dropout on hidden nodes}{10}
+\contentsline {subsubsection}{\numberline {2.2.3}Inductive Conformal Prediction}{11}
+\contentsline {section}{\numberline {3}Method}{12}
+\contentsline {subsection}{\numberline {3.1}Data collection}{13}
+\contentsline {subsubsection}{\numberline {3.1.1}Streets searched for sales}{13}
+\contentsline {subsubsection}{\numberline {3.1.2}Apartment sale statistic}{13}
+\contentsline {subsubsection}{\numberline {3.1.3}Street information}{14}
+\contentsline {subsubsection}{\numberline {3.1.4}Historic inflation figures}{14}
+\contentsline {subsubsection}{\numberline {3.1.5}Interest rates for apartment loans}{15}
+\contentsline {subsubsection}{\numberline {3.1.6}National election result}{15}
+\contentsline {subsubsection}{\numberline {3.1.7}Local features}{15}
+\contentsline {subsection}{\numberline {3.2}Features}{15}
+\contentsline {subsubsection}{\numberline {3.2.1}Feature aggregation}{16}
+\contentsline {subsubsection}{\numberline {3.2.2}Cleansing data}{16}
+\contentsline {subsubsection}{\numberline {3.2.3}Partitioning data}{16}
+\contentsline {subsubsection}{\numberline {3.2.4}Enrichment of Weka with hyperbolic tangent activation function}{16}
+\contentsline {subsection}{\numberline {3.3}Construction of the Multilayer Perceptron}{16}
+\contentsline {subsubsection}{\numberline {3.3.1}Activation function}{18}
+\contentsline {subsubsection}{\numberline {3.3.2}Weight and bias initialization}{18}
+\contentsline {subsubsection}{\numberline {3.3.3}Weight update regime}{18}
+\contentsline {subsubsection}{\numberline {3.3.4}Dropout regime}{19}
+\contentsline {section}{\numberline {4}The mathematics of Backpropagation}{20}
+\contentsline {subsection}{\numberline {4.1}Layout of the neural netowork}{20}
+\contentsline {subsection}{\numberline {4.2}Error function}{20}
+\contentsline {subsection}{\numberline {4.3}Activation functions in the nodes}{21}
+\contentsline {subsubsection}{\numberline {4.3.1}Output neuron (Linear)}{21}
+\contentsline {subsubsection}{\numberline {4.3.2}Logistic neuron (Sigmoid)}{21}
+\contentsline {subsubsection}{\numberline {4.3.3}Hyperbolig tangent neuron}{22}
+\contentsline {subsection}{\numberline {4.4}Finding the gradiants for the error function}{22}
+\contentsline {subsubsection}{\numberline {4.4.1}Single hidden layer with hyperbolic activation function}{22}
+\contentsline {subsubsection}{\numberline {4.4.2}Dual hidden layers with hyperbolic activation function}{23}
+\contentsline {subsection}{\numberline {4.5}Matrix calculations for the MLP}{24}
+\contentsline {subsubsection}{\numberline {4.5.1}Single hidden layer with hyperbolic activation function}{24}
+\contentsline {subsubsection}{\numberline {4.5.2}Dual hidden layers with hyperbolic activation function}{24}
+\contentsline {section}{\numberline {5}Experiments and Results}{25}
+\contentsline {subsection}{\numberline {5.1}Principal components analyse (PCA)}{25}
+\contentsline {subsection}{\numberline {5.2}Performance of support vector regression (SVR)}{25}
+\contentsline {subsubsection}{\numberline {5.2.1}Radial Kernel}{25}
+\contentsline {subsubsection}{\numberline {5.2.2}Sigmoid Kernel}{26}
+\contentsline {subsubsection}{\numberline {5.2.3}Polynomial Kernel}{27}
+\contentsline {subsection}{\numberline {5.3}Tuning parameters for the Multilayer Perseptron}{28}
+\contentsline {subsubsection}{\numberline {5.3.1}Finding values for learning rate and momentum}{28}
+\contentsline {subsubsection}{\numberline {5.3.2}Searching for appropriate MLP configuration}{30}
+\contentsline {subsection}{\numberline {5.4}Boosting multilayer perceptron performance}{31}
+\contentsline {subsubsection}{\numberline {5.4.1}Early stopping}{31}
+\contentsline {subsubsection}{\numberline {5.4.2}Mini-batch}{32}
+\contentsline {subsubsection}{\numberline {5.4.3}Random initialization of weights and dropout}{33}
+\contentsline {subsubsection}{\numberline {5.4.4}Conformal Prediction}{33}
+\contentsline {subsection}{\numberline {5.5}Fine tuning of parameters with Genetic Algorithm}{34}
+\contentsline {subsubsection}{\numberline {5.5.1}Tuning of SVR parameters}{34}
+\contentsline {subsubsection}{\numberline {5.5.2}Tuning of Multilayer Perseptron}{34}
+\contentsline {subsection}{\numberline {5.6}Summation of results}{36}
+\contentsline {section}{\numberline {6}Conclusion}{36}
+\contentsline {section}{\numberline {7}Discussion}{37}
+\contentsline {section}{\numberline {8}General ToDo}{37}
+\contentsline {section}{\numberline {9}Bibliography}{38}
+\contentsline {section}{Appendix \numberline {A}Features}{40}
